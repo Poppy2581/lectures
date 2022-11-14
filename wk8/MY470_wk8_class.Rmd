@@ -52,7 +52,7 @@ print("hello world!")
 
 ```
 
-When you are in a code chunk, using the keyboard shortcuts to run code will only run the line you have currently selected.
+When you are in a code chunk, using the keyboard shortcuts to run code will only run the line you have currently selected.if you want the whole code chunk, shift+ctrl+enter
 
 # Translating Between Python and R
 
