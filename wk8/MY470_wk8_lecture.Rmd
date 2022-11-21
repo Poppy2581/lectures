@@ -337,7 +337,7 @@ https://r4ds.had.co.nz/vectors.html
 
 ## Examples 
 
-Use the `c()` function to concatenate observations into a vector
+Use the `c()` function to concatenate observations into a vector, rather than us [] like in python
 
 - Character vector
 
@@ -398,6 +398,9 @@ series <- seq(1, 10, by = 0.1)
 series
 class(series)
 ```
+
+series gives you integer
+seq gives you numeric
 
 ## Index Elements
 
@@ -609,6 +612,9 @@ my_data_frame <- data.frame(numbers = num_double_vec,
                             logical = logical_vec)
 my_data_frame
 ```
+
+note that R has recycled data for words and logical, because they're shorter than the number vectors. 
+might be helpful or dangerous depending on what your objective is. 
 
 ## Matrix and Data Frame Subsetting
 
@@ -884,6 +890,8 @@ Source: https://adv-r.hadley.nz/fp.html
 my_data <- read.csv(file = "my_file.csv")
 ```
     
+note that in R, the '.' doesnt mean it's an attribute, so you can use it as part of the name, unlike in python.
+
 - `my_data` is an R data.frame object
 - `my_file.csv` is a .csv file with your data
 - Might need to use the `stringsAsFactors = FALSE` argument
